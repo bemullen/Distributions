@@ -1,8 +1,9 @@
+# imports that correspond to later sections of the code and project
+
 from numpy.random import seed, uniform,randint, exponential
 import argparse
 import math
 import hashlib, binascii
-import time
 import matplotlib.mlab as mlab
 import matplotlib.pyplot as plt
 import numpy as np
@@ -10,7 +11,6 @@ from scipy import stats
 from collections import Counter
 from scipy.stats import binom
 from scipy.stats import poisson
-import pandas as pd
 import random
 
 class RandVar:
