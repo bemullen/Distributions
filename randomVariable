@@ -28,12 +28,9 @@ class RandVar:
 
 num_trials = 1000
 uni = sorted([random.random() for x in range(num_trials)])
-expi = [RandVar.exp(x, 4) for x in uni]
-#                                                                                                                                              
+expi = [RandVar.exp(x, 4) for x in uni]                                                                                                                                           
 theo = [x*.001 for x in range(num_trials)]
 theox = [RandVar.exp(x,4)for x in theo ]
-
-
 
 plt.xlabel("Exponential distribution variable")
 plt.ylabel("Uniform random variable")
@@ -41,3 +38,4 @@ plt.ylabel("Uniform random variable")
 plt.plot(expi,uni)
 plt.plot(theox,theo, 'w--')
 plt.show()
+
